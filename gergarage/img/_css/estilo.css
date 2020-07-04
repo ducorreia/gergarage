@@ -1,0 +1,243 @@
+ @charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');/*Essa maneira vc usa uma fonte externa, nesse caso pelo google fonts*/
+ @font-face{/* Essa maneira utilizada para usar uma fonte(letra) salva no seu pc*/
+    font-family: "fontelogo";
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+ }
+body{
+     background-color: #dddddd;
+     font-family: arial, sans-serif;
+       }
+      
+div#interface {
+width: 900px;
+padding: 10px;
+background-color: #ffffff;
+margin: -20px auto 0px auto; /*centralizando o texto dentro da interface. A ordem e em sentido horario: cima, direita, baixo e esquerda.*/
+box-shadow: 0px 0px 10px rgba(0 0 0 .5) /*deslocamento lateral/deslocamento vertica/ espalhamento/ cor da sombra*/
+
+}
+   p{
+      text-align:justify;
+      text-indent:50px; 
+      }
+   a{/*cor do link*/
+      color: #666666;
+      text-decoration: none;
+   }
+   a:hover {
+      text-decoration: underline;
+   }
+   h1{
+       color:darkorange;
+      }
+header#cabecalho{
+   border-bottom: 1px solid grey;
+   height: 150px;
+   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;/*(deslocamento horizontal e depois vertical*//*colocando uma imagem como background*//*o uso dos dois pontos se da devido a pasta em que se encontra a imagem e uma anterior da pasta do CSS*//*no-repeat e usado para nao repetir varias vezes a mesma imagem*/
+}
+header#cabecalho h1{
+   font-family: "fontelogo", sans-serif;/*fonte utilizada pelo font-face*/
+   font-size: 50pt;
+   color: darkorange;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+   margin-bottom:0px;
+   padding: 0px;
+
+   
+   }
+   header#cabecalho h2{
+      font-family: 'Titillium Web', sans-serif;
+      color: orange  ;
+      font-size: 15pt;
+      padding: 0px;
+      margin-top: 0px;
+   }
+header#cabecalho img#icone{
+   position: absolute;
+   left:840px;
+   top:48px;
+}
+
+/* Formatacao de legenda*/
+figure.foto-legenda{
+position: relative;
+border:8px solid white;
+box-shadow: 1px 1px 4px black;
+
+}
+/*Adequando a imagem com a ampliacao e minimizacao da pagina ou da borda*/
+figure.foto-legenda img{
+width: 100%;
+height: 100%;
+
+}
+/* Adequando a legenda da imagem */
+figure.foto-legenda figcaption {
+   opacity: 0;
+   position:absolute;
+   top:0px;
+   background-color: rgba(0,0,0,0.4);
+   color: white;
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   transition: opacity 1s;
+   }
+
+   /*Ativando a legenda qdo passar o mouse sobre a imagem*/
+   figure.foto-legenda:hover figcaption{
+   opacity: 1;
+   }
+   /*Formatacao de um menu*/
+
+   /*fazer com que o menu flutue*/
+   nav#menu{
+      display: block;
+      }
+   nav#menu ul {
+     list-style: none;
+     text-transform: uppercase;
+     position: absolute; /*permite que a lista fique livre pelo site. Quando se fala em posicao realtiva o block fica preso dentro do objeto em que ele esta contida*/
+     top: -20px;
+     left: 570px;
+   }
+   nav#menu li{
+      display: inline-block;
+      background-color: darkorange;
+      padding: 10px; /*espaco dentro do objeto*/
+      margin: 2px; /*espaco entre objetos*/
+      transition: 1s;/*tempo de mudanca de cor quando passar o mouse em cima do botao*/
+   }
+   /*Efeito quando passar o mouse em cima do botao*/
+   nav#menu li:hover {
+      background-color: lightgrey;
+   }
+   nav#menu h1{
+      display: none;
+   }
+   nav#menu a {/*cor do link sem o mouse em cima*/
+      color: black;
+      text-decoration: none;
+   }
+   nav#menu a:hover{/*cor do link quando o botao for clicado*/
+      color: white;
+   }
+   section#corpo{
+      display: block;
+      width: 400px;/*a largura do espaco esquerdo*/
+      float: left;/*mostrado do lado esquerdo*/
+      border-right: 1px solid gray;/*espessura da linha, tipo da linha, cor*/
+      padding-right: 30px;
+   }
+   article#noticia-principal h2{
+      font-size: 13pt;
+      color: darkorange;
+      background-color: #dddddd;
+      padding: 5px 0px 5px 0px;
+      margin:10px 0px 10px 0px;
+   }
+   header#cabecalho-artigo h1{
+      font-family: "fontelogo", sans-serif;
+      font-size: 20pt;
+      color:darkorange;
+      margin-bottom: 0px;
+      margin-top: 0px;
+   }
+   header#cabecalho-artigo h2{
+      font-size: 13pt;
+      color:#cecece;
+      background-color: #ffffff;
+      margin:0px
+   }
+   header#cabecalho-artigo h3{
+      font-size: 12px;
+      color:#606060;
+   }
+   .direita{
+      text-align: right;
+   }
+   table#tabelaspec{
+      border: 1px solid orange;
+      border-spacing: 0px; /*para tirar o espacamento entre as bordas de cada td*/
+      margin-left: auto;/*centralizar a tabela*/
+      margin-right: auto;/*centralizar a tabela*/
+      
+   }
+   table#tabelaspec td{
+      border: 1px solid orange;
+      padding: 10px;/*configurar o espaco dentro de cada celula*/
+      text-align: center;
+      vertical-align: middle;
+   }
+    table#tabelaspec td.ce{  
+       color: white;
+       background-color: grey;
+       vertical-align: top;
+       font-weight: bold;/*deixa em negrito*/
+   }
+   table#tabelaspec td.cd{
+      color: black;
+      background: darkgrey;
+   }
+   table#tabelaspec caption{
+      color:#888888;
+      font-size: 13pt;
+      font-weight: bolder;
+   }
+   table#tabelaspec caption span{
+      display: block;
+      float: right;
+      color: black;
+      font-size: 8pt;
+      margin-top: 10px;
+   }
+   aside#lateral{
+      display: block;
+      width:400px;/*largura do espaco direito*/
+      float: right;/*mostrado do lado direito*/
+      background-color: #dddddd;
+      padding: 10px;
+      padding-right: 50px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 2 rgba(0 0 0 .5);
+      /*position: relative;*/
+      
+   }
+   aside#lateral h1{
+      font-family: "fontelogo", sans-serif;
+      font-size: 20pt;
+      color: darkorange;
+      margin-top: 0px;
+   }
+   aside#lateral h2{
+      background-color: #606060;
+      font-size: 13pt;
+      color:#ffffff;
+      padding: 5px;
+      }
+   footer#rodape{
+      clear: both;/*nao ficara no lado esquerdo nem do lado direito*/
+      border-top: 1px solid gray;
+   }
+   footer#rodape p{/*alinhando o rodape no centro*/
+      text-align: center;     
+   }
+  
+div.figureArticle {
+  float: right;
+  width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.lights {
+   width: 100%;
+ }
+ 
+ 
