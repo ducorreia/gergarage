@@ -1,0 +1,4 @@
+# Ger’s Garage Web Application
+**Date:** 2019
+**Project Length:** 6 weeks 
+**Technologies:** HTML, CSS, JavaScript, Bootstrap, MySQL and PHP. Result:  A Web Application was created to manage a garage in terms of stocking and bookings. There were two different access levels: admin and customer. Through this application the customers can make 4 different types of appointments to repair or check-up their vehicles and buy supplies when needed and the manager can organize the bookings and print out an invoice at the end of the service. By making the project, it was learnt how to build private pages in order to separate the admin and customers accesses; use of forms, use of ER-Diagram and Use-cases, database connection; invoice;
